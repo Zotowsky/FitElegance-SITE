@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitElegance - Элегантный фитнес-клуб</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>FitElegance</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О клубе</a></li>
+                <li><a href="#services" class="nav-link">Услуги</a></li>
+                <li><a href="#schedule" class="nav-link">Расписание</a></li>
+                <li><a href="#trainers" class="nav-link">Тренеры</a></li>
+                <li><a href="#pricing" class="nav-link">Цены</a></li>
+                <li class="nav-auth">
+                    <button class="btn-login" id="loginBtn">Войти</button>
+                    <button class="btn-register" id="registerBtn">Регистрация</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video-element">
+            <source src="videos\video.mp4" type="video/mp4">
+            <source src="videos/hero-yoga.webm" type="video/webm">
+            Ваш браузер не поддерживает видео тег.
+        </video>
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">Преобрази свое тело в нежной атмосфере</h1>
+        <p class="hero-subtitle">Элегантный подход к фитнесу, где каждая деталь создана для вашего комфорта и гармонии</p>
+        <div class="hero-buttons">
+            <button class="btn-primary" id="startTrainingBtn">Начать тренироваться</button>
+            <button class="btn-secondary" id="trialClassBtn">Записаться на пробное занятие</button>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section class="about-us">
+        <h2>О НАС</h2>
+        
+        <div class="about-item">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>ПРЕМИУМ-ОБОРУДОВАНИЕ</h3>
+                    <p>Наш тренажерный зал оснащен тренажерами премиум-класса от ведущего мирового производителя Life Fitness. 
+                    Мы предлагаем полный спектр оборудования для профессиональных тренировок на все группы мышц.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img\equip.jpg" alt="Премиум оборудование">
+                </div>
+            </div>
+        </div>
+    
+        <div class="divider"></div>
+    
+        <div class="about-item">
+            <div class="about-content reverse">
+                <div class="about-text">
+                    <h3>ПРОФЕССИОНАЛЬНЫЕ ТРЕНЕРЫ</h3>
+                    <p>В нашем клубе работают сертифицированные специалисты с международными квалификациями. 
+                    Мы регулярно проводим обучение и повышение квалификации нашего тренерского состава.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img\trainer.png" alt="Профессиональные тренеры">
+                </div>
+            </div>
+        </div>
+    
+        <div class="divider"></div>
+    
+        <div class="about-item">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>УНИКАЛЬНЫЕ ЗОНЫ</h3>
+                    <p>Фитнес-клуб обладает собственной террасой с workout-зоной и зоной отдыха. 
+                    Панорамные окна кардиозоны открывают вид на центральную часть Краснодара.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img\zona.jpg" alt="Уникальные зоны">
+                </div>
+            </div>
+        </div>
+    
+        <div class="divider"></div>
+    
+        <div class="about-item">
+            <div class="about-content reverse">
+                <div class="about-text">
+                    <h3>ЛИЦЕНЗИРОВАННЫЕ ПРОГРАММЫ</h3>
+                    <p>Мы являемся официальным правообладателем лицензии на проведение тренировок Les Mills 
+                    и других мировых фитнес-программ.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img\program.jpg" alt="Лицензированные программы">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Направления тренировок</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧘</div>
+                    <h3>Йога</h3>
+                    <p>Гармония тела и разума через древние практики в современной интерпретации для всех уровней</p>
+                    <ul>
+                        <li>Хатха йога</li>
+                        <li>Виньяса флоу</li>
+                        <li>Йога для начинающих</li>
+                        <li>Аштанга йога</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💫</div>
+                    <h3>Пилатес</h3>
+                    <p>Укрепление мышечного корсета и улучшение осанки через контролированные движения</p>
+                    <ul>
+                        <li>Пилатес на матах</li>
+                        <li>Реформер пилатес</li>
+                        <li>Пилатес для спины</li>
+                        <li>Пилатес для продвинутых</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Стретчинг</h3>
+                    <p>Развитие гибкости и снятие мышечного напряжения через глубокое растяжение</p>
+                    <ul>
+                        <li>Динамический стретчинг</li>
+                        <li>Статическая растяжка</li>
+                        <li>Растяжка для шпагата</li>
+                        <li>Глубокий стретчинг</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Функциональный тренинг</h3>
+                    <p>Улучшение повседневных движений и развитие общей физической подготовки</p>
+                    <ul>
+                        <li>TRX тренировки</li>
+                        <li>Функциональный круг</li>
+                        <li>Силовые занятия</li>
+                        <li>Интервальные тренировки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="section-title">Расписание занятий</h2>
+            <div class="schedule-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="yoga">Йога</button>
+                <button class="filter-btn" data-filter="pilates">Пилатес</button>
+                <button class="filter-btn" data-filter="stretching">Стретчинг</button>
+                <button class="filter-btn" data-filter="functional">Функциональный</button>
+            </div>
+            <div class="schedule-table" id="scheduleTable">
+                <div class="loading">Загрузка расписания...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <h2 class="section-title">Наши тренеры</h2>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="img\anna.jpg" alt="Анна Иванова">
+                    </div>
+                    <h3>Анна Иванова</h3>
+                    <p class="trainer-specialty">Йога, Стретчинг</p>
+                    <p class="trainer-bio">Сертифицированный инструктор с 8-летним опытом</p>
+                    <button class="btn-outline trainer-more" data-trainer="1">Подробнее</button>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="img\maria.jpg" alt="Мария Петрова">
+                    </div>
+                    <h3>Мария Петрова</h3>
+                    <p class="trainer-specialty">Пилатес, Функциональный тренинг</p>
+                    <p class="trainer-bio">Специалист по реабилитации и коррекции осанки</p>
+                    <button class="btn-outline trainer-more" data-trainer="2">Подробнее</button>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="img\dima.png" alt="Дмитрий Смирнов">
+                    </div>
+                    <h3>Дмитрий Смирнов</h3>
+                    <p class="trainer-specialty">Функциональный тренинг</p>
+                    <p class="trainer-bio">Мастер спорта по легкой атлетике, опыт 6 лет</p>
+                    <button class="btn-outline trainer-more" data-trainer="3">Подробнее</button>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="img\elena.jpg" alt="Елена Козлова">
+                    </div>
+                    <h3>Елена Козлова</h3>
+                    <p class="trainer-specialty">Стретчинг, Пилатес</p>
+                    <p class="trainer-bio">Сертифицированный инструктор по стретчингу</p>
+                    <button class="btn-outline trainer-more" data-trainer="4">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Абонементы</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Разовый</h3>
+                        <div class="price">800 ₽</div>
+                        <p>за занятие</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 1 групповое занятие</li>
+                        <li>✓ Доступ к раздевалке</li>
+                        <li>✓ Полотенце и вода</li>
+                        <li>✗ Персональная консультация</li>
+                        <li>✗ Скидка на массаж</li>
+                    </ul>
+                    <button class="btn-primary pricing-btn" data-plan="single">Выбрать</button>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="pricing-header">
+                        <h3>Месячный</h3>
+                        <div class="price">5 900 ₽</div>
+                        <p>в месяц</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 8 групповых занятий</li>
+                        <li>✓ Доступ к раздевалке</li>
+                        <li>✓ Полотенце и вода</li>
+                        <li>✓ 1 персональная консультация</li>
+                        <li>✓ Скидка 10% на массаж</li>
+                    </ul>
+                    <button class="btn-primary pricing-btn" data-plan="monthly">Выбрать</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Безлимитный</h3>
+                        <div class="price">8 900 ₽</div>
+                        <p>в месяц</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Неограниченные занятия</li>
+                        <li>✓ Доступ к раздевалке</li>
+                        <li>✓ Полотенце и вода</li>
+                        <li>✓ 2 персональные консультации</li>
+                        <li>✓ Скидка 20% на массаж</li>
+                    </ul>
+                    <button class="btn-primary pricing-btn" data-plan="unlimited">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FitElegance</h3>
+                    <p>Элегантный фитнес-клуб с атмосферой гармонии и комфорта для вашего совершенства</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>📧 hello@fitelegance.ru</p>
+                    <p>📍 Москва, ул. Гармонии, 15</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 7:00 - 23:00</p>
+                    <p>Сб-Вс: 9:00 - 22:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <p>Instagram: @fitelegance</p>
+                    <p>Telegram: @fitelegance_club</p>
+                    <p>VK: vk.com/fitelegance</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitElegance. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход в аккаунт</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" name="password" required placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="btn-primary">Войти</button>
+            </form>
+            <p class="auth-switch">Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a></p>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" name="name" required placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" name="phone" required placeholder="+7 (999) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" name="password" required placeholder="Не менее 6 символов">
+                </div>
+                <div class="form-group">
+                    <label for="registerSubscription">Абонемент</label>
+                    <select id="registerSubscription" name="subscription_type" required>
+                        <option value="single">Разовый - 800 ₽/занятие</option>
+                        <option value="monthly">Месячный - 5 900 ₽/месяц</option>
+                        <option value="unlimited">Безлимитный - 8 900 ₽/месяц</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Зарегистрироваться</button>
+            </form>
+            <p class="auth-switch">Уже есть аккаунт? <a href="#" id="switchToLogin">Войти</a></p>
+        </div>
+    </div>
+
+    <!-- User Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content wide">
+            <span class="close">&times;</span>
+            <h2>Личный кабинет</h2>
+            <div id="profileContent">
+                <!-- Profile content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Class Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Запись на занятие</h2>
+            <div id="bookingContent">
+                <!-- Booking content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Trainer Details Modal -->
+    <div id="trainerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="trainerContent">
+                <!-- Trainer details will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
