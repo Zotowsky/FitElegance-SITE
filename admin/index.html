@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админка - FitElegance</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="header-left">
+                <h1>🏋️ FitElegance Admin</h1>
+                <span class="admin-status">Онлайн</span>
+            </div>
+            <div class="header-right">
+                <span id="currentTime"></span>
+                <button id="logoutBtn" class="logout-btn">🚪 Выйти</button>
+            </div>
+        </header>
+        
+        <nav class="admin-nav">
+            <button class="nav-btn active" data-tab="services">💪 Услуги</button>
+            <button class="nav-btn" data-tab="trainers">👥 Тренеры</button>
+            <button class="nav-btn" data-tab="schedule">📅 Расписание</button>
+            <button class="nav-btn" data-tab="pricing">💰 Цены</button>
+            <button class="nav-btn" data-tab="leads">📋 Заявки</button>
+            <button class="nav-btn" data-tab="settings">⚙️ Настройки</button>
+        </nav>
+        
+        <main class="admin-content">
+            <div class="tab-content" id="tabContent">
+                <!-- Контент будет загружаться здесь -->
+            </div>
+        </main>
+        
+        <footer class="admin-footer">
+            <p>FitElegance Admin Panel v1.0</p>
+        </footer>
+    </div>
+
+    <!-- Модальные окна -->
+    <div id="modalOverlay" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Редактирование</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Контент модального окна -->
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
